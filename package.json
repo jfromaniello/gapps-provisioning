@@ -1,12 +1,15 @@
 {
   "name": "gapps-provisioning",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "(Unofficial) Google Apps Provisioning Api client library.",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha --require should -t 3000"
   },
-  "repository": "",
+  "repository": { 
+    "type" : "git", 
+    "url" : "http://github.com/jfromaniello/gapps-provisioning.git"
+  },
   "keywords": [
     "google",
     "apps",
