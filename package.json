@@ -1,0 +1,27 @@
+{
+  "name": "gapps-provisioning",
+  "version": "0.0.1",
+  "description": "(Unofficial) Google Apps Provisioning Api client library.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --require should -t 3000"
+  },
+  "repository": "",
+  "keywords": [
+    "google",
+    "apps",
+    "google-data"
+  ],
+  "author": "José F. Romaniello <jfromaniello@gmail.com> (http://joseoncode.com)",
+  "license": "MIT",
+  "dependencies": {
+    "request": "~2.12.0",
+    "refresh-token": "0.0.1",
+    "async": "~0.1.22",
+    "xtend": "~1.0.3"
+  },
+  "devDependencies": {
+    "should": "~1.2.1",
+    "mocha": "~1.7.4"
+  }
+}
