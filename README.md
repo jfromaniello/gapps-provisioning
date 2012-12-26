@@ -12,7 +12,7 @@
 var UsersClient = require('gapps-provisioning').Users;
 
 var usersClient = new UsersClient({
-  domain:       'mydomain.com',
+  domain:       'a-gapps-domain.com',
   access_token: 'administrator access token for my application'
 });
 
@@ -21,7 +21,7 @@ usersClient.getAll(function (err, feeds, users) {
 });
 ~~~
 
-Alternatively you can request the first ```access_token``` with [the offline option](https://developers.google.com/accounts/docs/OAuth2WebServer#offline) provide a ```refresh_token```, ```client_id``` and ```client_secret``` as follows:
+Otherwise request the first ```access_token``` with [the offline option](https://developers.google.com/accounts/docs/OAuth2WebServer#offline) and provide a ```refresh_token```, ```client_id``` and ```client_secret``` as follows:
 
 ~~~javascript
 
@@ -32,7 +32,7 @@ var usersClient = new UsersClient({
   refresh_token: 'x',
   client_id:     'my app client id',
   client_secret: 'my app client secret'
-  /* optionally pass the first token 
+  /* optionally the first token 
   access_token:  'y',
   expires_in:    '3000'
    */
